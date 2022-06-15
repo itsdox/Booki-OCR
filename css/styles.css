@@ -1,0 +1,466 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+
+/* ---------------------------------------- */
+/* ==            SUMMARY              */
+/*---------------------------------------- */
+
+/*l12       Elements principaux*/
+/*l61       header*/
+/*l91       section top*/
+/*l228      section carte*/
+/*L324       section activité*/
+/*l397       footer*/
+
+
+/* ---------------------------------------- */
+/* ==          elements principaux         */
+/*---------------------------------------- */
+
+*
+{
+    box-sizing: border-box;  
+}
+body
+{
+    font-family:  'Raleway', sans-serif;
+    color: black;
+    /*width: 100%;*/      
+}
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding: 0 15px; 
+    /*width: 70%;*/    
+}
+h3 ,p
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+li
+{
+    list-style-type: none;        
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+ul
+{
+    padding-left: 0;
+}
+.fa-solid.fa-star.blue
+{
+    color: #0065FC;
+}
+.fa-solid.fa-star.grey
+{
+    color: #f2f2f2;
+}
+/* ---------------------------------------- */
+/* ==            header                    */
+/*---------------------------------------- */
+
+nav
+{
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+nav a img
+{
+    width: 16%;
+    min-width: 150px;
+}
+nav ul
+{
+    padding-left: 0px;
+    display: flex;       
+    margin-top: 0;             
+}
+nav ul li
+{    
+    padding-top: 50px;   
+    width: 162px;
+    text-align: center;                    
+}
+nav ul li:hover
+{
+    border-top: 2px solid #0065FC;
+}
+nav ul li a:hover
+{
+    color:#0065FC;
+}
+
+/* ---------------------------------------- */
+/* ==            section top                */
+/*---------------------------------------- */
+
+#topsection
+{
+    margin-bottom: 15px;
+}
+
+#paragraph
+{
+    margin-bottom: 30px;
+}
+
+/*barre de recheche*/
+form
+{
+    display: flex;      
+    align-items: center;  
+    width: 380px;
+    height: 60px;    
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background: white;
+}
+#localisation
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    width: 7%;
+    min-width: 50px;
+    height: 60px;
+    border-radius: 15px 0 0 15px; 
+}
+#recherche form input
+{
+    height: 60px;
+    border: none; 
+    border-top: 1px solid #f2f2f2; 
+    border-bottom: 1px solid #f2f2f2;     
+}
+#input::placeholder
+{
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+label
+{
+    position: absolute;
+    left: -100%
+}
+button
+{  
+    height: 100%; 
+    background: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    display: flex;    
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    font-weight: bold;
+}
+
+button .fa-magnifying-glass
+{
+    display: none;
+}
+
+
+
+
+/*les filtres*/
+#grpfiltre
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+        
+}
+#grpfiltre h2
+{
+    margin-right: 20px;    
+}
+.box h2
+{
+    margin-right: 17px;
+    margin-left: 60px;
+}
+
+.box
+{
+    position: relative;
+    background: white;  
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;  
+    margin-right: 25px;
+}
+.cercle
+{
+    position: absolute;
+    left: -1px;
+    width: 50px;
+    height: 50px;
+    background: #DEEBFF;
+    border-radius: 50px;
+    border: 5px solid #DEEBFF;
+    display: flex;
+    align-items: center;       
+    
+}
+.cercle i
+{
+    width: 100%;
+    text-align: center;
+    color: #0065FC;
+}
+.cercle:hover
+{
+    width: 100%;
+    border-radius: 50px;    
+}
+.box h3:hover
+{
+    display: none;
+}
+
+/*indice info*/
+#info
+{
+    display: flex;
+    align-items: center;
+}
+.bulleinfo
+{
+    display: flex;
+    align-items: center;
+    border: 3px solid #f2f2f2;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 10px;    
+}
+.bulleinfo i
+{
+    width: 100%;
+    text-align: center;
+    color: #0065FC;
+}
+
+
+/* ---------------------------------------- */
+/* ==            section carte             */
+/*---------------------------------------- */
+
+
+#groupeCarte
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;          
+}
+#gallery
+{
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px;
+    width: 66%;
+}
+#thumbnails
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: 15px; 
+}
+.miniature
+{
+    margin-bottom: 20px;    
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 20px;
+    background: white;
+    padding: 5px;
+    width: 100%;
+    max-width: 247px;
+}
+.miniature img
+{       
+    width: 100%;
+    height: 114px;     
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.notation
+{    
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;   
+    font-size: 15px;
+    padding-left: 15px;   
+    padding-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.miniature h2
+{
+    font-size: 20px;    
+}
+.etoile
+{
+    display: flex;
+}
+
+/* aside */
+
+aside
+{
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px;
+    width: 34%;
+    min-width: 286px;
+    max-width: 420px;
+}
+aside h2
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.carte2
+{
+    display: flex;
+    background: white; 
+    border-radius: 20px;    
+    margin-bottom: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    padding: 5px;    
+}
+.carte2 img
+{
+    width: 127px;
+    height: 160px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    min-width: 140px;
+}
+
+
+/* ---------------------------------------- */
+/* ==            section activité           */
+/*---------------------------------------- */
+
+
+
+#activites
+{
+    margin-bottom: 30px;      
+}
+.columnalgn
+{
+    display: flex;    
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    height: 600px;   
+}
+.column
+{
+    width: 23%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    background-color: white;
+    box-shadow: 0 0 16px #0000002e;
+}
+.inter 
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+.column img
+{  
+    width: 100%;
+    height: calc(100% - 70px);
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    
+}
+.bloctxt
+{
+    width: 100%;
+    padding: 15px;
+}
+
+
+.column2
+{
+    width: 23%; 
+    height: 100%;   
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    margin-bottom: 35px;
+    
+}
+.column2 img
+{
+    width: 100%;
+    height: calc(100% - 70px);
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+#un,#deux,#trois,#quatre
+{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;    
+}
+#un
+{
+    height: 55%;    
+}
+#deux
+{
+    height: 40%;
+}
+#trois
+{
+    height: 45%;
+}
+#quatre
+{
+    height: 50%;
+}
+
+
+/* ---------------------------------------- */
+/* ==            footer                     */
+/*---------------------------------------- */
+
+
+footer
+{
+    background: #f2f2f2;   
+}
+.footerallcolumn
+{
+    display: flex;    
+}
+.footercolumn
+{
+    
+    width: 30%
+}
+

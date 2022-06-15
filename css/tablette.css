@@ -1,0 +1,42 @@
+
+/*groupe des cartes*/
+
+#groupeCarte
+{
+    flex-direction: column-reverse;
+}
+/*aside*/
+aside
+{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.carte2 img
+{
+    width: 350px;
+    min-width: 350px;
+    height: 190px;
+}
+.notation
+{
+    font-size: 18px;
+}
+/*groupe des cartes*/
+#gallery
+{
+    width: 100%;
+}
+
+/*activitées a marseille*/
+
+.columnalgn
+{
+    height: auto;
+}
+
+.column, .column2
+{
+    width: 48%;
+    height: auto;
+}

@@ -1,0 +1,133 @@
+/*general*/
+
+main, #footerallcolumn
+{    
+    width: 100%;
+}
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;    
+}
+header img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+nav ul
+{
+    width: 100%;
+}
+nav ul li
+{
+    border-top: none;
+    padding-bottom: 30px;
+    padding-top: 0;
+    width: 100%;
+}
+nav ul li:hover
+{
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+}
+nav ul li a:hover
+{
+    color:#0065FC;
+}
+
+/* section top*/
+#topsection
+{
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+#recherche
+{
+    width: 100%;
+}
+
+#recherche form input
+{
+    width: 100%;
+}
+button span
+{
+    display: none;
+}
+
+button
+{
+    border-radius: 15px;
+    width: 30%;
+}
+
+button .fa-magnifying-glass
+{
+    display: inline-block;
+    background: #0065FC;    
+}
+
+
+/*thumbnails*/
+#gallery
+{
+    background: white;
+}
+.miniature
+{
+    max-width: 100%;
+}
+aside
+{
+    border-radius: 0;
+}
+article
+{
+    background: transparent;
+}
+.carte2 img
+{
+    width: 300px;
+    min-width: 200px;
+}
+/*activités a marseille*/
+
+#activites
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column, .column2
+{
+    width: 100%;    
+}
+.inter
+{
+    height: 200px;
+}
+#un,#deux,#trois,#quatre
+{
+    width: 100%;
+    height: 200px;
+}
+#un, #trois
+{
+    margin-bottom: 35px;
+}
+
+/*footer*/
+#footerallcolumn
+{
+    flex-direction: column;
+}
+.footercolumn
+{
+    width: 100%;
+}
